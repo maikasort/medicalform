@@ -1,0 +1,119 @@
+
+<!--
+	1) Once the patient presses submit the document should then transfer to their degsinated doctor healthy daily report for that specific 
+	   patient.
+	2) Make a login page as well (eventually).
+	4) front-end javascript / php back-end.
+	3) Connect data of the pages to a database.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<style>
+ li{
+ 		display:inline-block;
+        opacity: 0.1;
+  		filter: alpha(opacity=10);
+        padding:6px;
+        border-width:0px;
+    }
+    li:hover{
+        /*border:1px solid #000000;
+        background-color: #FFFFFF;*/
+       padding:5px;
+       background-color: #FFFFFF;
+       opacity: 1.0;
+  	   filter: alpha(opacity=100);
+       
+    }
+
+</style>
+
+<style>
+body {
+  background: url("file:///home/maika/Pictures/Your%20Health%20First.png") no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  background-position: right; 
+}
+</style>
+
+<body><li>
+	<div style="text-align:center">
+	<h1 style = "margin-right: 15%; margin-left: 15%;">Daily Records</h1> 
+	<h2><!--add description here--></h2>
+</div>
+
+<div style="text-align:center">
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> 1. Have you been experiencing any lightheadness or dizziness this week? </h4>
+<body>
+
+</body>
+<div style="text-align:center">
+	<h4 style = "margin-right: 15; margin-left: 15%;"> 2. With in the past week have you fainted? </h4>
+<body>
+
+</body>
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes" please describe in detail what was the cause</h4>
+	<textarea style = "margin-right: 15%; margin-left: 15%;" rows = "10" cols = "50"></textarea>
+</div>
+<div style="text-align:center">
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> 3. Have you been experiencing any rapid heartbeat this past week? </h4>
+	<body>
+
+</body>
+<div style="text-align:center">
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> 4. Have you been experiencing pounding chest pulses? </h4>
+	<body>
+
+	</body>
+<div style="text-align:center">
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> 5. Have you been experiencing chest pressure,tightness or pain? </h4>
+	<body>
+
+</body>
+<div style="text-align:center">
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> 6. Have you been experiecing any shortness of breath? </h4>
+	<body>
+
+</body>
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes" please choose from the list below the possible cause </h4>
+	<select style = "margin-right: 15%; margin-left: 15%;">
+  	<option value="Panic">Panic Attacks</option>
+  	<option value="Anxiety">Anxiety</option>
+  	<option value="Fatigue">Fatigue</option>
+  	<option value="Exercise">Exercise</option>
+  	<option value="Other">Other</option>
+	</select>
+</div>
+<div style="text-align:center">
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> 7. Have you been experiencing greater fatigue than normal? </h4>
+
+	<body>
+
+</body>
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes", please pick from any of the following</h4>
+	<select style = "margin-right: 15%; margin-left: 15%;">
+  	<option value="Work">Work</option>
+  	<option value="Exercise">Exercise</option>
+  	<option value="Stress">Stress</option>
+  	<option value="Other">Other</option>
+	</select>
+</div>
+<div style="text-align:center">
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> 8. Are there any new complication(s) that you have been experiencing? </h4>
+	<body>
+</body>
+	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes" please describe in detail the complication(s)
+		<br/>
+		<br/>
+	<textarea style = "margin-right: 15%; margin-left: 15%;" rows = "10" cols = "50"></textarea>
+	<br/>
+	<br/>
+	<input style = "margin-right: 15%; margin-left: 15%;" type="submit" value="Submit">
+	</div>
+</li>
+</body>
+</head>
+</html>
