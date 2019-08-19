@@ -6,7 +6,8 @@
 	4) front-end javascript / php back-end.
 	3) Connect data of the pages to a database.
 -->
-<!--Toggle the dropdown and textbox when answer is 'yes'-->
+<!--1) Toggle the dropdown and textbox when answer is 'yes'
+	2) Change Font-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,14 +40,61 @@ body {
 }
 </style>
 
-<body><li>
-	<div style="text-align:center">
-	<h1 style = "margin-right: 15%; margin-left: 15%;">Daily Records</h1>
-	<h2><!--add description here--></h2>
-</div>
+<style>
+text{
 
+	font-size: 15.5px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	font-family: Arial;
+}
+</style>
+
+<style>
+.btn {
+  background-color: #FFFFFF;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #F5F5F5;
+  color: black;
+}
+</style>
+
+<style>
+.btm {
+  background-color: #FFFFFF;
+  border: none;
+  color: black;
+  /*padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;*/
+  transition: 0.3s;
+}
+
+.btm:hover {
+  background-color: #F5F5F5;
+  color: black;
+}
+</style>
+
+<body><li><text>
+	<div style="text-align:center">
+	<button class="btn"><h1 style = "margin-right: 15%; margin-left: 15%;">Daily Records</h1></button>
+</br>
+	<button class="btn"><p style = "margin-right: 15%; margin-left: 15%;">Please fill out the form so your doctor can monitor your weekly health</p>
+</div>
+</br>
 <div style="text-align:center">
-	<h4 style = "margin-right: 15%; margin-left: 15%;"> 1. Have you been experiencing any lightheadness or dizziness this week? </h4>
+<button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 1. Have you been experiencing any lightheadness or dizziness this week? </h4>
 <body>
 <label>
       <input class="with-gap" name="group3" type="radio" checked />
@@ -55,9 +103,9 @@ body {
   <input class="with-gap" name="group3" type="radio" checked />
       <span>No</span>
     </label>
-</body>
+</body></button>
 <div style="text-align:center">
-	<h4 style = "margin-right: 20%; margin-left: 20%;"> 2. With in the past week have you fainted? </h4>
+<button class="btn"><h4 style = "margin-right: 20%; margin-left: 20%;"> 2. With in the past week have you fainted? </h4>
 <body>
 <label>
       <input class="with-gap" name="group4" type="radio" checked />
@@ -66,12 +114,12 @@ body {
   <input class="with-gap" name="group4" type="radio" checked />
       <span>No</span>
     </label>
-</body>
+</body></button>
 	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes" please describe in detail what was the cause</h4>
 	<textarea style = "margin-right: 15%; margin-left: 15%;" rows = "10" cols = "50"></textarea>
 </div>
 <div style="text-align:center">
-	<h4 style = "margin-right: 15%; margin-left: 15%;"> 3. Have you been experiencing any rapid heartbeat this past week? </h4>
+<button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 3. Have you been experiencing any rapid heartbeat this past week? </h4>
 	<body>
 	<label>
       <input class="with-gap" name="group5" type="radio" checked />
@@ -80,9 +128,9 @@ body {
   <input class="with-gap" name="group5" type="radio" checked />
       <span>No</span>
     </label>
-	</body>
+	</body></button>
 <div style="text-align:center">
-	<h4 style = "margin-right: 15%; margin-left: 15%;"> 4. Have you been experiencing pounding chest pulses? </h4>
+<button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 4. Have you been experiencing pounding chest pulses? </h4>
 	<body>
 	<label>
       <input class="with-gap" name="group6" type="radio" checked />
@@ -91,9 +139,9 @@ body {
   <input class="with-gap" name="group6" type="radio" checked />
       <span>No</span>
     </label>	
-	</body>
+	</body></button>
 <div style="text-align:center">
-	<h4 style = "margin-right: 15%; margin-left: 15%;"> 5. Have you been experiencing chest pressure,tightness or pain? </h4>
+<button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 5. Have you been experiencing chest pressure,tightness or pain? </h4>
 	<body>
 		<label>
       <input class="with-gap" name="group7" type="radio" checked />
@@ -102,9 +150,9 @@ body {
   <input class="with-gap" name="group7" type="radio" checked />
       <span>No</span>
     </label>
-</body>
+</body></button>
 <div style="text-align:center">
-	<h4 style = "margin-right: 15%; margin-left: 15%;"> 6. Have you been experiecing any shortness of breath? </h4>
+<button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 6. Have you been experiecing any shortness of breath? </h4>
 	<body>
 <label>
       <input class="with-gap" name="group8" type="radio" checked />
@@ -113,7 +161,7 @@ body {
   <input class="with-gap" name="group8" type="radio" checked />
       <span>No</span>
     </label>
-</body>
+</body></button>
 	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes" please choose from the list below the possible cause </h4>
 	<select style = "margin-right: 15%; margin-left: 15%;">
   	<option value="Panic">Panic Attacks</option>
@@ -124,7 +172,7 @@ body {
 	</select>
 </div>
 <div style="text-align:center">
-	<h4 style = "margin-right: 15%; margin-left: 15%;"> 7. Have you been experiencing greater fatigue than normal? </h4>
+<button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 7. Have you been experiencing greater fatigue than normal? </h4>
 
 	<body>
 <label>
@@ -134,7 +182,7 @@ body {
   <input class="with-gap" name="group9" type="radio" checked />
       <span>No</span>
     </label>
-</body>
+</body></button>
 	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes", please pick from any of the following</h4>
 	<select style = "margin-right: 15%; margin-left: 15%;">
   	<option value="Work">Work</option>
@@ -144,7 +192,7 @@ body {
 	</select>
 </div>
 <div style="text-align:center">
-	<h4 style = "margin-right: 15%; margin-left: 15%;"> 8. Are there any new complication(s) that you have been experiencing? </h4>
+<button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 8. Are there any new complication(s) that you have been experiencing? </h4>
 	<body>
 		<label>
       <input class="with-gap" name="group10" type="radio" checked />
@@ -153,7 +201,7 @@ body {
   <input class="with-gap" name="group10" type="radio" checked />
       <span>No</span>
     </label>
-</body>
+</body></button>
 	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes" please describe in detail the complication(s)
 		<br/>
 		<br/>
@@ -163,6 +211,7 @@ body {
 	<input style = "margin-right: 15%; margin-left: 15%;" type="submit" value="Submit">
 	</div>
 </li>
+</text>
 </body>
 </head>
 </html>
