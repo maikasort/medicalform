@@ -6,8 +6,6 @@
 	4) front-end javascript / php back-end.
 	3) Connect data of the pages to a database.
 -->
-<!--1) Toggle the dropdown and textbox when answer is 'yes'
-	2) Change Font-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -105,18 +103,23 @@ text{
     </label>
 </body></button>
 <div style="text-align:center">
+<label for= "a">	
 <button class="btn"><h4 style = "margin-right: 20%; margin-left: 20%;"> 2. With in the past week have you fainted? </h4>
 <body>
 <label>
-      <input class="with-gap" name="group4" type="radio" checked />
+      <input class="with-gap" name="group4" type="radio" checked id="a" onclick="showHideDiv()" />
       <span>Yes</span>
   </br>
-  <input class="with-gap" name="group4" type="radio" checked />
+</label>
+<label for="checkNo">
+  <input class="with-gap" name="group4" type="radio" checked  id="cNo" onclick="showHideDiv()"/>
       <span>No</span>
     </label>
 </body></button>
+	<div id="b" style="display: none">
 	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes" please describe in detail what was the cause</h4>
 	<textarea style = "margin-right: 15%; margin-left: 15%;" rows = "10" cols = "50"></textarea>
+</div>
 </div>
 <div style="text-align:center">
 <button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 3. Have you been experiencing any rapid heartbeat this past week? </h4>
@@ -152,56 +155,70 @@ text{
     </label>
 </body></button>
 <div style="text-align:center">
+<label for= "x">	
 <button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 6. Have you been experiecing any shortness of breath? </h4>
 	<body>
-<label>
-      <input class="with-gap" name="group8" type="radio" checked />
+      <input class="with-gap" name="group8" type="radio" checked id="x" onclick="showHideDiv2()" />
       <span>Yes</span>
+</label>      
        </br>
-  <input class="with-gap" name="group8" type="radio" checked />
+  <label for= "checkNo">       
+  <input class="with-gap" name="group8" type="radio" checked id="cNo" onclick="showHideDiv2()" />
       <span>No</span>
     </label>
 </body></button>
+	<div id="m" style="display: none"> 
 	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes" please choose from the list below the possible cause </h4>
-	<select style = "margin-right: 15%; margin-left: 15%;">
-  	<option value="Panic">Panic Attacks</option>
-  	<option value="Anxiety">Anxiety</option>
-  	<option value="Fatigue">Fatigue</option>
-  	<option value="Exercise">Exercise</option>
-  	<option value="Other">Other</option>
-	</select>
+	<h4 style = "margin-right: 15%; margin-left: 15%;">
+  	 <input class="with-gap" name="choice" type="radio" checked />Panic Attacks
+  	 <input class="with-gap" name="choice" type="radio" checked />Anxiety
+  	 <input class="with-gap" name="choice" type="radio" checked />Fatigue
+  	 <input class="with-gap" name="choice" type="radio" checked />Exercise
+  	 <h4 style = "margin-right: 3%; margin-left: 3%;"><input class="with-gap" name="choice" type="radio" checked />Other
+	</h4>
+</div>
 </div>
 <div style="text-align:center">
+<label for= "e">	
 <button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 7. Have you been experiencing greater fatigue than normal? </h4>
-
 	<body>
 <label>
-      <input class="with-gap" name="group9" type="radio" checked />
+      <input class="with-gap" name="group9" type="radio" checked id="e" onclick="showHideDiv3()"/>
       <span>Yes</span>
+</label>      
        </br>
+  <label for= "cNo">	     
   <input class="with-gap" name="group9" type="radio" checked />
       <span>No</span>
     </label>
+	</label>
 </body></button>
+	<div id="f" style="display: none"> 
 	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes", please pick from any of the following</h4>
-	<select style = "margin-right: 15%; margin-left: 15%;">
-  	<option value="Work">Work</option>
-  	<option value="Exercise">Exercise</option>
-  	<option value="Stress">Stress</option>
-  	<option value="Other">Other</option>
-	</select>
+	<h4 style = "margin-right: 15%; margin-left: 15%;">
+  	 <input class="radio-toolbar" name="choice2" type="radio" checked />Work
+  	 <input class="with-gap" name="choice2" type="radio" checked />Exercise
+  	 <input class="with-gap" name="choice2" type="radio" checked />Stress
+  	 <input class="with-gap" name="choice2" type="radio" checked />Other
+	</h4>
+</div>
 </div>
 <div style="text-align:center">
+<label for="g">
 <button class="btn"><h4 style = "margin-right: 15%; margin-left: 15%;"> 8. Are there any new complication(s) that you have been experiencing? </h4>
 	<body>
 		<label>
-      <input class="with-gap" name="group10" type="radio" checked />
+      <input class="with-gap" name="group10" type="radio" checked id="g" onclick="showHideDiv4()"/>
       <span>Yes</span>
+ </label>
        </br>
-  <input class="with-gap" name="group10" type="radio" checked />
+  <label for="h">
+  <input class="with-gap" name="group10" type="radio" checked id="cNo" onclick="showHideDiv4()"/>
       <span>No</span>
     </label>
+</label>
 </body></button>
+<div id="h" style="display: none"> 
 	<h4 style = "margin-right: 15%; margin-left: 15%;"> If "Yes" please describe in detail the complication(s)
 		<br/>
 		<br/>
@@ -210,8 +227,32 @@ text{
 	<br/>
 	<input style = "margin-right: 15%; margin-left: 15%;" type="submit" value="Submit">
 	</div>
+</div>
+</h4>
 </li>
 </text>
 </body>
 </head>
 </html>
+<script type="text/javascript">
+	function showHideDiv(){
+		var a = document.getElementById("a");
+		var b = document.getElementById("b");
+		b.style.display = a.checked ? "block" : "none";
+	}
+	function showHideDiv2(){
+		var x = document.getElementById("x");
+		var m= document.getElementById("m");
+		m.style.display = x.checked ? "block" : "none";
+	}
+	function showHideDiv3(){
+		var e = document.getElementById("e");
+		var f= document.getElementById("f");
+		f.style.display = e.checked ? "block" : "none";
+	}
+	function showHideDiv4(){
+		var g = document.getElementById("g");
+		var h= document.getElementById("h");
+		h.style.display = g.checked ? "block" : "none";
+	}
+</script>
